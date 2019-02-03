@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Workerのサンプル</title>
+
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="MainSection">
+        <div class="MainSection_heading">Workerのサンプル</div>
+        <div class="MainSection_content">
+            <div class="Sum">
+                <div class="Sum_note">1から指定した値までの和を計算</div>
+                <div class="Sum_input"><input type="number" class="Input js-input" min="1" value="100000000"></div>
+                <div class="Sum_buttons">
+                    <div class="Sum_button"><button class="Button js-sum" type="button">階和計算</button></div>
+                    <div class="Sum_button"><button class="Button js-worker-sum" type="button">階和計算（Worker）</button></div>
+                </div>
+                <div class="Sum_result js-result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./browser.js"></script>
+</body>
+</html>
